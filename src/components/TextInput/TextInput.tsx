@@ -27,6 +27,7 @@ const TextInput = ({
       onChange={(e) => {
         setValue(e.target.value);
       }}
+      {...props}
     />
   );
 };
@@ -34,9 +35,8 @@ const TextInput = ({
 export default memo(TextInput);
 
 const CustomInput = styled(TextField)({
-  width: "100%",  
   "& .MuiOutlinedInput-root": {
-    borderRadius: "10px",
+    borderRadius: "8px",
     backgroundColor: "white",    
   },
   '& input:valid + fieldset': {

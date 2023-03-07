@@ -8,7 +8,7 @@ const Header = () => {
   
   return (
     <div className={styles.header}>
-      <SearchBar input={input} setInput={setInput} debounceTime={2000} />
+      <SearchBar input={input} setInput={setInput} debounceTime={2000} fullWidth/>
     </div>
   );
 };
