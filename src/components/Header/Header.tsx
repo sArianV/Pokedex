@@ -10,8 +10,7 @@ import { TailSpin } from "react-loader-spinner";
 const Header = () => {
   const [input, setInput] = useState("");
   const { loading } = useFetchPokemon(input);
-  console.log(loading);
-  
+
   return (
     <Container maxWidth="lg" sx={styles.header}>
       <Container maxWidth="sm">
@@ -23,19 +22,23 @@ const Header = () => {
           setInput={setInput}
           debounceTime={2000}
           fullWidth
-          InputProps={loading?{
-            endAdornment: (
-              <InputAdornment position="end">
-                <TailSpin
-                  color="#4dad5b"
-                  height="1.5rem"
-                  width="1.5rem"
-                  ariaLabel="tail-spin-loading"
-                  visible={true}
-                />
-              </InputAdornment>
-            ),
-          }: {}}
+          InputProps={
+            loading
+              ? {
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <TailSpin
+                        color="#4dad5b"
+                        height="1.5rem"
+                        width="1.5rem"
+                        ariaLabel="tail-spin-loading"
+                        visible={true}
+                      />
+                    </InputAdornment>
+                  ),
+                }
+              : {}
+          }
         />
       </Container>
       <Container

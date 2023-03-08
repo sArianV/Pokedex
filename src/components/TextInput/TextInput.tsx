@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import useDebounce from "@hooks/useDebounce/useDebounce";
 import TextField, { TextFieldProps } from "@mui/material/TextField";
 import { memo, useState } from "react";
-import styles from "./TextInput.module.css";
 
 const TextInput = ({
   input,

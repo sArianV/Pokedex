@@ -8,7 +8,7 @@ const useDebounce = (
  
   
   useEffect(() => {
-    if (value === "" || /* value.length < 3 || */ !callback) return;
+    if (!callback) return;
     const timer = setTimeout(() => {      
       callback(value);
     }, delay);
