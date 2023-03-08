@@ -1,16 +1,18 @@
-import { TPokemon, TPokemonList } from '@controllers/types'
+import { TPokemon, TPokdex } from '@controllers/types'
 import { atom } from 'jotai'
 
-export const PokemonAtom = atom<TPokemonList | TPokemon | null>(null)
+export const PokedexAtom = atom<TPokdex>([])
+export const PokedexInput =atom<string>('')
+export const PokedexLenght = atom<number>(8)
 
 export const PokemonSearchAtom = atom((get) => {
-    const content = get(PokemonAtom) as TPokemon
-    if (content?.id) return content
-    return null
-})
+    const pokedex = get(PokedexAtom) as TPokdex
+    const input = get(PokedexInput)
+    const lenght = get(PokedexLenght)
 
-export const PokemonListAtom = atom((get) => {
-    const content = get(PokemonAtom) as TPokemonList
-    if (content?.length) return content
+    if (!pokedex) return []
+    if ( input === "" ) return pokedex.slice(0, lenght)
+
+    
     return null
 })

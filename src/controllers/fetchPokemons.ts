@@ -1,5 +1,5 @@
 import { pokeApi } from "../services/pokeApi/pokeApi";
-import { TPokemon, TPokemonList } from "./types";
+import { TPokemon, TPokdex } from "./types";
 
 const fetchAsyncPokemons = async (input: string) => {
   let query = "pokemon";
@@ -7,7 +7,7 @@ const fetchAsyncPokemons = async (input: string) => {
   try {
     const response = await pokeApi(query);
     const result = response?.data?.results
-      ? (response?.data?.results as TPokemonList)
+      ? (response?.data?.results as TPokdex)
       : (response?.data as TPokemon);
     return result;
   } catch (error) {

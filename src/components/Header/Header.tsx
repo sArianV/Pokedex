@@ -1,15 +1,14 @@
 "use client";
 
-import { useState } from "react";
 import SearchBar from "@components/TextInput/TextInput";
-import useFetchPokemon from "./hooks/useFetchPokemon";
 import { Container } from "@mui/system";
-import { InputAdornment, Typography } from "@mui/material";
-import { TailSpin } from "react-loader-spinner";
+import { Typography } from "@mui/material";
+
+import { useAtom } from "jotai";
+import { PokedexInput } from "@atoms/pokemon";
 
 const Header = () => {
-  const [input, setInput] = useState("");
-  const { loading } = useFetchPokemon(input);
+  const [input, setInput] = useAtom(PokedexInput);
 
   return (
     <Container maxWidth="lg" sx={styles.header}>
@@ -22,23 +21,6 @@ const Header = () => {
           setInput={setInput}
           debounceTime={2000}
           fullWidth
-          InputProps={
-            loading
-              ? {
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <TailSpin
-                        color="#4dad5b"
-                        height="1.5rem"
-                        width="1.5rem"
-                        ariaLabel="tail-spin-loading"
-                        visible={true}
-                      />
-                    </InputAdornment>
-                  ),
-                }
-              : {}
-          }
         />
       </Container>
       <Container

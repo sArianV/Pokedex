@@ -1,4 +1,5 @@
-export type TPokemonList = {
+export type TPokdex = {
+  id: string;
   name: string;
   url: string;
 }[];
