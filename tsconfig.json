@@ -19,6 +19,8 @@
       "@hooks/*": ["./src/hooks/*"],
       "@atoms/*": ["./src/atoms/*"],
       "@assets/*": ["./src/assets/*"],
+      "@controllers/*": ["./src/controllers/*"],
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

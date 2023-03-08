@@ -6,7 +6,6 @@ import { useAtomValue } from "jotai";
 
 const PokemonList = () => {
     const pokemonResults = useAtomValue(PokemonAtom)
-    console.log(pokemonResults);
     
     return (
         <div>
