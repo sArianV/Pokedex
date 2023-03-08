@@ -84,12 +84,14 @@ export type TPokemon = {
       url: string;
     };
   }[];
-  types: {
-    slot: number;
-    type: {
-      name: string;
-      url: string;
-    };
-  }[];
+  types: TPokemonType[];
   weight: number;
 };
+
+export type TPokemonType = {
+  slot: number;
+  type: {
+    name: string;
+    url: string;
+  };
+}

@@ -13,9 +13,15 @@ export const PokemonSearchAtom = atom((get) => {
 
   if (!pokedex) return [];
   if (input === "") return pokedex.slice(0, lenght);
+
   if (!isNaN(Number(input)))
-    return pokedex.filter((pokemon) => pokemon.id.toString().includes(input)).slice(0, lenght);
-  return pokedex.filter((pokemon) =>
-    pokemon.name.toLowerCase().includes(input.toLowerCase())
-  ).slice(0, lenght);
+    return pokedex
+      .filter((pokemon) => pokemon.id.toString().includes(input))
+      .slice(0, lenght);
+
+  return pokedex
+    .filter((pokemon) =>
+      pokemon.name.toLowerCase().includes(input.toLowerCase())
+    )
+    .slice(0, lenght);   
 });
