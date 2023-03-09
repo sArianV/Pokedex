@@ -12,6 +12,7 @@ import Image from "next/image";
 import SpriteList from "@components/SpriteList/SpriteList";
 import PokemonType from "@components/PokemonType/PokemonType";
 import { LineWave } from "react-loader-spinner";
+import SectionTitle from "@components/SectionTitle/SectionTitle";
 
 const PokemonPage = () => {
   const router = useRouter();
@@ -49,12 +50,9 @@ const PokemonPage = () => {
             <Grid item xs={12}>
               <Typography variant="h4">{pokemonName} </Typography>
             </Grid>
-            <Grid item xs={12} pb="1rem">
-              <Typography variant="h5" my={2} textAlign="center">
-                Info
-              </Typography>
-              <Divider />
-            </Grid>
+            <SectionTitle 
+              title="Info"
+            />
             <Grid item xs={12}>
               <Typography variant="h5" color="gray">
                 N°: #{pokemonNumber}
@@ -70,11 +68,23 @@ const PokemonPage = () => {
                 ))}
               </div>
             </Grid>
-            <Grid item xs={12} pb="1rem">
-              <Typography variant="h5" my={2} textAlign="center">
-                Sprites
+            <Grid item xs={12} pb=".8rem">
+              <Typography variant="h5" color="gray">
+                Height: {rawPokemon?.height ? `${rawPokemon?.height / 10}Mt.` : ""}
               </Typography>
-              <Divider />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h5" color="gray">
+                Weight: {rawPokemon?.weight ? `${rawPokemon?.weight / 10}Kg.` : ""}
+              </Typography>
+            </Grid>
+            <SectionTitle 
+              title="Stats"
+            />
+            <SectionTitle 
+              title="Sprites"
+            />
+            <Grid item xs={12} pb="1rem">
               <SpriteList
                 showTags
                 frontDefault={rawPokemon?.sprites?.front_default}
