@@ -7,7 +7,7 @@ const PokemonType = ({ type }: { type: TPokemonType }) => {
       style={{
         backgroundColor: POKEMON_TYPES[type].color,
         color: POKEMON_TYPES[type].fontColor,
-        padding: "0.1rem 0.3rem",
+        padding: "0.1rem 1.5rem",
         borderRadius: "5px",
       }}
     >
