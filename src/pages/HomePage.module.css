@@ -16,3 +16,11 @@
   right: 20px;
   z-index: 100;
 }
+
+.loadMoreButton {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

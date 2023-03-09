@@ -4,7 +4,7 @@ import PokemonList from "@components/PokemonList/PokemonList";
 import fetchAsyncPokedex from "@controllers/fetchPokedex";
 import useLoadMorePokemons from "@hooks/pokemon/useLoadMorePokemons";
 import useScroll from "@hooks/useScroll/useScroll";
-import { Container, IconButton } from "@mui/material";
+import { Button, Container, IconButton } from "@mui/material";
 import { useSetAtom } from "jotai";
 import { useEffect, useCallback } from "react";
 import formatPokedex from "../formaters/formatPokedex";
@@ -34,6 +34,7 @@ const Home = () => {
     },
     [loadMorePokemons]
   );
+
   const [executeScroll, elRef] = useScroll();
   return (
     <div className={styles.root} onScroll={handleScroll}>
@@ -58,6 +59,11 @@ const Home = () => {
       >
         <ArrowUpwardIcon fontSize="inherit" />
       </IconButton>
+      <div className={styles.loadMoreButton}>
+        <Button onClick={loadMorePokemons} size="large" color="success">
+          Load more
+        </Button>
+      </div>
     </div>
   );
 };
