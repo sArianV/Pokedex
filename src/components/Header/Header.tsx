@@ -14,7 +14,7 @@ const Header = () => {
     <div style={styles.root}>
       <Container maxWidth="lg" sx={styles.header}>
         <Container maxWidth="sm">
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom color="#fff">
             Name or Number
           </Typography>
           <SearchBar
@@ -32,7 +32,7 @@ const Header = () => {
             padding: "1rem",
           }}
         >
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom color="#fff">
             Search for a Pokémon by name or using its National Pokédex number.
           </Typography>
         </Container>
