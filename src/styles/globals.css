@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+/* 
+  smooth scroll
+*/
+
+html {
+  scroll-behavior: smooth;
+}
