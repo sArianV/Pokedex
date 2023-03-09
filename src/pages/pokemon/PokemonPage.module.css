@@ -10,3 +10,14 @@
 .root::-webkit-scrollbar {
   display: none;
 }
+
+.typesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.loadingContainer {
+  margin-top: -4rem;
+}

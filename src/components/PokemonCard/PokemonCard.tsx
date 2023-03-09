@@ -4,7 +4,6 @@ import PokemonType from "@components/PokemonType/PokemonType";
 import SpriteList from "@components/SpriteList/SpriteList";
 import { Divider, Grid, Paper, Typography } from "@mui/material";
 import { capitalize } from "lodash";
-import Image from "next/image";
 import Link from "next/link";
 import { memo } from "react";
 import { TFormatedPokemon } from "../../formaters/types";

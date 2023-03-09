@@ -39,7 +39,7 @@ export type TPokemon = {
       };
     }[];
   }[];
-  id: number;
+  id: string;
   is_default: boolean;
   location_area_encounters: string;
   moves: {
