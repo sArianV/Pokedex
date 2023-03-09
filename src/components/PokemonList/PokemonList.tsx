@@ -13,9 +13,9 @@ const PokemonList = () => {
       <Container maxWidth="lg" sx={{
         backgroundColor: "white",
         paddingTop: "3rem",
-        height: "100%",
+        minHeight: "100vh",
       }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} height="100%" >
           {searchResult.map((pokemon) => (
             <PokemonListItem id={pokemon.id} key={pokemon.name} />
           ))}
