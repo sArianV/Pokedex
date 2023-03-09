@@ -66,16 +66,7 @@ export type TPokemon = {
     name: string;
     url: string;
   };
-  sprites: {
-    back_default: string;
-    back_female: string;
-    back_shiny: string;
-    back_shiny_female: string;
-    front_default: string;
-    front_female: string;
-    front_shiny: string;
-    front_shiny_female: string;
-  };
+  sprites: TPokemonSprites;
   stats: {
     base_stat: number;
     effort: number;
@@ -94,4 +85,15 @@ export type TPokemonType = {
     name: string;
     url: string;
   };
-}
+};
+
+export type TPokemonSprites = {
+  back_default: string;
+  back_female: string;
+  back_shiny: string;
+  back_shiny_female: string;
+  front_default: string;
+  front_female: string;
+  front_shiny: string;
+  front_shiny_female: string;
+};
