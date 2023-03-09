@@ -10,8 +10,7 @@ import styles from "./PokemonCard.module.css";
 
 const PokemonCard = ({ id, name, imageUrl, types }: TFormatedPokemon) => {
   const pokemonName = capitalize(name);
-  const pokemonNumber = id.padStart(4, "0");
-  
+  const pokemonNumber = id.padStart(4, "0"); 
 
   return (
     <Grid item xs={12} sm={6} md={4} lg={3} className={styles.root}>
