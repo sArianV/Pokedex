@@ -16,8 +16,16 @@
   flex-direction: row;
   gap: 1rem;
   margin-top: 10px;
+  position: relative;
 }
 
 .loadingContainer {
   margin-top: -4rem;
+}
+
+.backButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
 }

@@ -67,17 +67,19 @@ export type TPokemon = {
     url: string;
   };
   sprites: TPokemonSprites;
-  stats: {
-    base_stat: number;
-    effort: number;
-    stat: {
-      name: string;
-      url: string;
-    };
-  }[];
+  stats: TRawStats;
   types: TPokemonType[];
   weight: number;
 };
+
+export type TRawStats ={
+  base_stat: number;
+  effort: number;
+  stat: {
+    name: string;
+    url: string;
+  };
+}[];
 
 export type TPokemonType = {
   slot: number;

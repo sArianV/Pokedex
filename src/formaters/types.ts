@@ -6,3 +6,12 @@ export type TFormatedPokemon = {
   types: TPokemonType[];
   imageUrl: string;
 };
+
+export type TPokemonStats = {
+  hp?: number;
+  attack?: number;
+  defense?: number;
+  specialAttack?: number;
+  specialDefense?: number;
+  speed?: number;
+}

@@ -28,49 +28,49 @@ const SpriteList = ({
       {frontDefault && (
         <div className={styles.image}>
           <Image src={frontDefault} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Male front</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Male front</Typography>}
         </div>
       )}
       {backDefault && (
         <div className={styles.image}>
           <Image src={backDefault} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Male back</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Male back</Typography>}
         </div>
       )}
       {frontFemale && (
         <div className={styles.image}>
           <Image src={frontFemale} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Female front</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Female front</Typography>}
         </div>
       )}
       {backFemale && (
         <div className={styles.image}>
           <Image src={backFemale} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Female back</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Female back</Typography>}
         </div>
       )}
       {frontShiny && (
         <div className={styles.image}>
           <Image src={frontShiny} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Male shiny front</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Male shiny front</Typography>}
         </div>
       )}
       {backShiny && (
         <div className={styles.image}>
           <Image src={backShiny} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Male shiny back</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Male shiny back</Typography>}
         </div>
       )}
       {frontShinyFemale && (
         <div className={styles.image}>
           <Image src={frontShinyFemale} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Female shiny front</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Female shiny front</Typography>}
         </div>
       )}
       {backShinyFemale && (
         <div className={styles.image}>
           <Image src={backShinyFemale} height={200} width={200} alt="" />
-          {showTags && <Typography mt={-1} variant="subtitle1" gutterBottom>Female shiny back</Typography>}
+          {showTags && <Typography color='#6e6c6c' mt={-1} variant="subtitle1" gutterBottom>Female shiny back</Typography>}
         </div>
       )}
     </div>
