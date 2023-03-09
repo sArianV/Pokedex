@@ -1,3 +1,5 @@
+"use client";
+
 import PokemonType from "@components/PokemonType/PokemonType";
 import { Divider, Grid, Paper, Typography } from "@mui/material";
 import { capitalize } from "lodash";
