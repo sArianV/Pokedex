@@ -10,6 +10,7 @@ import { useEffect, useCallback } from "react";
 import formatPokedex from "../formaters/formatPokedex";
 import styles from "./HomePage.module.css";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+
 const Home = () => {
   const setPokedex = useSetAtom(PokedexAtom);
   const { loadMorePokemons } = useLoadMorePokemons();
