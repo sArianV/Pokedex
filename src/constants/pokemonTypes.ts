@@ -55,7 +55,7 @@ export const POKEMON_TYPES: Record<string, {
   },
   ground: {
     name: "ground",
-    color: "#f7de3f",
+    color: "#ab9842",
     fontColor: "#fff",
   },
   ice: {
